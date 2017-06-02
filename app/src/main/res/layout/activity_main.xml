@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.wireless.aina.smartbuttonexample.MainActivity">
+
+    <TextView
+        android:id="@+id/services"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/services"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/service1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/services"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/service2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/service1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:id="@+id/service3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/service2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:id="@+id/service4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/service3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:id="@+id/service5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/service4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:id="@+id/service6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/service5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_battlevel"
+        android:layout_below="@+id/service6"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_buttonmaskheader"
+        android:layout_below="@+id/textView_battlevel"
+        android:textStyle="bold"
+        android:text="@string/btn_service"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_buttonmask"
+        android:layout_toEndOf="@+id/textView_buttonmaskheader"
+        android:textStyle="bold"
+        android:layout_marginTop="205dp"
+        android:layout_marginLeft="7dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_buttons"
+        android:layout_below="@+id/textView_buttonmaskheader"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sw_version"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:contentDescription="@string/logo_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sw_version"
+        android:src="@drawable/aina_logo"
+        android:id="@+id/aina_logo"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/red_led_btn"
+        android:text="@string/red"
+        android:layout_width="95dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView_buttons"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="-5dp"/>
+
+    <Button
+        android:id="@+id/green_led_btn"
+        android:text="@string/green"
+        android:layout_width="95dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView_buttons"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="87dp"/>
+
+    <Button
+        android:id="@+id/amber_led_btn"
+        android:text="@string/amber"
+        android:layout_width="95dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView_buttons"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="179dp"/>
+
+
+    <Button
+        android:id="@+id/off_led_btn"
+        android:text="@string/off"
+        android:layout_width="95dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView_buttons"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="271dp"/>
+
+</RelativeLayout>
